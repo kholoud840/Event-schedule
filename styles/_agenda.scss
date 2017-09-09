@@ -1,0 +1,72 @@
+.agenda{
+  //text-align: center;
+}
+.agenda-title{
+  padding: $unit-large 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #eee;
+}
+
+.agenda-date{
+  text-align: center;
+  padding:$unit-large;
+}
+
+.agenda-details{
+      /*edit later max width */
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $unit;
+    border-bottom: 2px dotted #ccc;
+    text-align: center;
+
+    @media (min-width: $small){
+      flex-direction: initial;
+      text-align: initial;
+      //justify-content: center;
+      //padding-bottom: 0;
+      //border-bottom:none;
+
+    }
+
+  }
+
+  time{
+    font-size: $unit-large;
+    color:#ff670d;
+
+    @media (min-width: $small){
+      border-right:3px solid #ccc ;
+      padding-right:$unit;
+      margin-right:$unit;
+      width:200px;
+    }
+  }
+  .activity{
+    color: #444444;
+    text-transform: capitalize;
+
+
+
+
+    h3{
+      font-family: sans-serif;
+      margin-bottom: $unit-tiny;
+      font-size: $unit;
+    }
+    h4{
+      color:#ccc;
+      font-size:$unit-medium;
+      font-family: sans-serif;
+    }
+  }
+}
+.break{
+  time{
+    color: #5e5e5e;
+  }
+
+}
